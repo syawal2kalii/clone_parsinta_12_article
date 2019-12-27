@@ -9,8 +9,7 @@
             <a class="nav-item nav-link text-white" href="/about">About</a>
             <a class="nav-item nav-link text-white" href="/contact">Contact</a>
             <a class="nav-item nav-link text-white" href="/user">Users</a>
-            <a class="nav-item nav-link text-white" href="<?php echo e(route('article')); ?>">Create Article</a>
+            <a class="nav-item nav-link text-white" href="{{route('create')}}">Create Article</a>
           </div>
         </div>
 </nav>
-<?php /**PATH /opt/lampp/htdocs/clone_laravel_parsinta/resources/views/layout/navigation.blade.php ENDPATH**/ ?>

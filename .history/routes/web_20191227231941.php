@@ -33,8 +33,9 @@ Route::get('/elequentfind','Belequent@find')->name('elequent.find'); //route wil
 Route::get('/elequentfindb/{id}','Belequent@findb')->name('elequent.findb'); //route wildcard
 Route::get('/elequentdestroy','Belequent@destroy')->name('elequent.destroy'); //route wildcard
 Route::get('/elequentedit','Belequent@edit')->name('elequent.edit'); //route wildcard
-Route::get('/article','ArticleController@index')->name('article');
-Route::post('/article/create','ArticleController@create')->name('article.create');
+Route::get('/article', function ($id) {
+    
+});
 
 
 //baru lagi
