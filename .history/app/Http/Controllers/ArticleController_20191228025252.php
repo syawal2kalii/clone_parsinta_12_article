@@ -18,7 +18,7 @@ class ArticleController extends Controller
         //cara 1
         // $article = new Article;
         // $article->title = request('title');
-        // $article->slug = \Str::slug(request('title'))."-".\Str::random(10);
+        // $article->slug = \Str::slug(request('title'));
         // $article->content = request('content');
         // $article->save();
         // return back();
@@ -31,7 +31,7 @@ class ArticleController extends Controller
 
         Article::create([
             "title"=>request('title'),
-            "slug"=>\Str::slug(request('title'))."-".\Str::random(10),
+            "slug"=>\Str::slug(request('title')),
             "content"=>request('content')
         ]);
 

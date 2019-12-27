@@ -18,7 +18,7 @@
             <div class="form-group">
                 <label for="content">Content</label>
                 <textarea  @error('content') is-invalid @enderror id="content" class="form-control" type="text" name="content" rows="5"></textarea>
-                {!! $errors->first('title','<span class="invalid feedback">:message</span>')!!}
+                {!! $errors->first('title','<span class="invalid-feedback">:message</span>')!!}
             
             </div>
             <button type="submit" class="btn btn-primary">OK</button>
